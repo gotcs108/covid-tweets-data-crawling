@@ -1,0 +1,5 @@
+venv
+src/dev.env
+src/service_account.json
+src/playground.py
+.DS_Store
