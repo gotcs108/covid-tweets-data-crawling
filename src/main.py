@@ -146,7 +146,7 @@ def upload_tweets():
                 # Sleep after each keyword fetch
                 print(f'Loop {counter}: Completed fetching keyword "{keyword}"')
                 yield from asyncio.sleep(1)
-        except tweepy.RateLimitError:
+        except tweepy.TweepError:
             # To handle rate limit error, sleep 15 minutes (try it every 5 minutes)
             print("Rate Limit Error")
             yield from asyncio.sleep(300)
